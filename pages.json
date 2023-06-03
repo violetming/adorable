@@ -1,0 +1,75 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+			"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/city/city",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/friend/friend",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		// 未选中的页签的文字颜色
+		"color": "#8a8a8a",
+		"selectedColor": "#f4ae3e",
+		"list": [
+			{
+				"iconPath": "static/img/index0.png",
+				"selectedIconPath": "static/img/index1.png",
+				"pagePath": "pages/index/index",
+				"text":"发现"
+			},
+			{
+				"iconPath": "static/img/city0.png",
+				"selectedIconPath": "static/img/city1.png",
+				"pagePath": "pages/city/city",
+				"text": "同城"
+			},
+			{
+				"iconPath": "static/img/friend0.png",
+				"selectedIconPath": "static/img/friend1.png",
+				"pagePath": "pages/friend/friend",
+				"text": "宠圈"
+			},
+			{
+				"iconPath": "static/img/my0.png",
+				"selectedIconPath": "static/img/my1.png",
+				"pagePath": "pages/my/my",
+				"text": "我的"
+			}
+		]
+	}
+}
