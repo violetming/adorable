@@ -33,6 +33,28 @@
             }
             
         }
+        ,{
+            "path" : "pages/parttime/parttime",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/seek/seek",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

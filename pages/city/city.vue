@@ -1,9 +1,6 @@
 <template>
 	<view>
-		<view class="status_bar">
-							<!-- 这里是状态栏 -->
-						</view>	
-						<!-- F1 -->
+			<!-- F1 -->
 			<view class="title">
 				<text class="txtq">
 					同城
@@ -13,16 +10,16 @@
 		<!-- F2 -->
 		<view class="f2title">
 			<view class="f2box">
-			<view class="f2box1">
+			<view @click="jump('/pages/parttime/parttime')" class="f2box1">
 				<image src="../../static/img/part-time.svg" mode=""></image>
 			</view>
 				<text>兼职</text>
 			</view>
-			<view class="f2box">
+			<view @click="jump('/pages/seek/seek')" class="f2box">
 			<view class="f2box1">
 				<image src="../../static/img/part-time.svg" mode=""></image>
 			</view>
-				<text>兼职</text>
+				<text>寻找/寻主</text>
 			</view>
 			<view class="f2box">
 			<view class="f2box1">
@@ -43,6 +40,16 @@
 				<uni-icons type="email-filled" size="30"></uni-icons>
 				<text>附近</text>
 			</view>
+			<view v-for="item in 10" class="f3box2">
+				<view class="f3box2top">
+					<image src="../../static/img/slideshow2.jpg" mode=""></image>
+					<view class="f3box2right">
+						<text>喵呜阿旺宠物医院(24小时)</text>
+						<text>♥♥♥♥♥♥</text>
+						<text class="f3box2botton">胜利桥东</text>
+					</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -55,17 +62,15 @@
 			}
 		},
 		methods: {
-			
+			jump(url){
+				uni.navigateTo({url})
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
-  .status_bar {
-      height: var(--status-bar-height);
-      width: 100%;
-			background-color: #f4ae3e;
-  }
+
 	.title{
 		display: flex;
 		align-items: center;
@@ -117,6 +122,41 @@
 				width: 100rpx;
 				height: 100rpx;
 			}
+			}
+		}
+	}
+// F3
+	.f3box{
+		.f3box1{
+			display: flex;
+			align-items: center;
+		}
+		.f3box2{
+			width: 90%;
+			margin: 10rpx auto;
+			background-color: #f4ae3e;
+			padding: 10rpx;
+			border-radius: 10rpx;
+			.f3box2top{
+				display: flex;
+				image{
+					width: 230rpx;
+					height: 175rpx;
+					border-radius: 10rpx;
+				}
+				.f3box2right{
+					
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					margin: 0 20rpx;
+					text{
+						margin: 5rpx 0;
+					}
+					.f3box2botton{
+						margin: auto 0;
+					}
+				}
 			}
 		}
 	}
