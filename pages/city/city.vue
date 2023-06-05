@@ -21,17 +21,17 @@
 			</view>
 				<text>寻找/寻主</text>
 			</view>
-			<view class="f2box">
+			<view @click="jump('/pages/fosterCare/fosterCare')" class="f2box">
 			<view class="f2box1">
 				<image src="../../static/img/part-time.svg" mode=""></image>
 			</view>
-				<text>兼职</text>
+				<text>寄养</text>
 			</view>
-			<view class="f2box">
+			<view @click="jump('/pages/salvage/salvage')" class="f2box">
 			<view class="f2box1">
 				<image src="../../static/img/part-time.svg" mode=""></image>
 			</view>
-				<text>兼职</text>
+				<text>救助</text>
 			</view>
 		</view>
 		<!-- F3 -->

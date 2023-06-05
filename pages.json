@@ -48,7 +48,29 @@
             "path" : "pages/seek/seek",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "寻宠/寻主",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fosterCare/fosterCare",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "寄养",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/salvage/salvage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "救助",
                 "enablePullDownRefresh": false,
 								"navigationBarBackgroundColor": "#f4ae3e",
 								"navigationBarTextStyle": "white"
