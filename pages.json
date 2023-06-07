@@ -77,6 +77,28 @@
             }
             
         }
+        ,{
+            "path" : "pages/adoption/adoption",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "领养中心",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/doctorlist/doctorlist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "医生列表",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#f4ae3e",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

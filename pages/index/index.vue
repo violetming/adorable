@@ -41,7 +41,7 @@
 									<uni-icons type="email-filled" size="30"></uni-icons>
 									<text>宠物领养</text>
 								</view>
-							<text>更多..</text>
+							<text @click="jump('/pages/adoption/adoption')">更多..</text>
 						</view>
 						<view class="subject">
 							<view class="subject1">
@@ -72,7 +72,7 @@
 								<uni-icons type="email-filled" size="30"></uni-icons>
 								<text>问医生</text>
 							</view>
-						<text>更多..</text>
+						<text @click="jump('/pages/doctorlist/doctorlist')">更多..</text>
 					</view>
 					<view class="f4subject">
 						<view class="f4subject1">
@@ -126,6 +126,21 @@
 			</view>
 	</view>
 </template>
+<script>
+	
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			jump(url){
+				uni.navigateTo({url})
+			}
+		}
+	}
+</script>
 <style lang="scss">
   .status_bar {
       height: var(--status-bar-height);
